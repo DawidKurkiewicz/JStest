@@ -1,4 +1,25 @@
-const ola = 'ola ola ola';
+let myArray = ['1', '2', '3', '4'];
+
+for ( let i = 0; i < myArray.length; i++) {
+    console.log('liczby', myArray[i]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*const ola = 'ola ola ola';
 let zygmunt = 'zygmunt ma ';
 
 {
