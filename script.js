@@ -1,11 +1,15 @@
 const ola = 'ola ola ola';
-let zygmunt = 'zygmunt ma psa';
+let zygmunt = 'zygmunt ma ';
 
 {
     const ela = 'ela jest ok';
     console.log(ela);
 
 }
+const liczbaPsow  = 10;
+zygmunt = zygmunt + liczbaPsow + ' psow';
+const zygSTR  = 'zygmunt ma ${liczbaPsow} psow';
+console.log(zygmunt);
 
 
 
