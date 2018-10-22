@@ -1,13 +1,18 @@
-let myArray = ['1', '2', '3', '4'];
+const ola = 'ola jest fajna';
+const myArray = [1, null, true, ola, 'raz', 'dwa', 'trzy'];
 
-for ( let i = 0; i < myArray.length; i++) {
-    console.log('liczby', myArray[i]);
+for (let i = 0; i < myArray.length; i++) {
+    console.log( `pod kluczem ${i} mam wartosc: ${myArray[i]}`);
 }
 
 
+let i = 0;
+while (i < myArray.length) {
+    console.log( `pod kluczem ${i} mam wartosc: ${myArray[i]}`);
+    i++;
 
 
-
+}
 
 
 
