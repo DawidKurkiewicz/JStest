@@ -1,18 +1,7 @@
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-var numbers = [];
-for (var i = 0; i < 1000; i++){
-    numbers[i] = Math.random();
-
+var i = numbers.length - 1;
+while (i < 12) {
+  console.log(numbers[i]);
+  i++;
 }
-console.time('in loop')
-for (var i = 0; i < numbers.length; i++){
-    console.log(numbers[i])
-}
-console.timeEnd('in loop')
-
-console.time('before loop')
-var length = numbers.length
-for (var i = 0; i < length; i++) {
-    console.log(numbers[i])
-}
-console.timeEnd('before loop')
