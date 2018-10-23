@@ -1,8 +1,6 @@
-var a = [1, 2, 3, 4, 5];
-
-a.unshift(0);
-a.push(6);
-console.log(a);
-a.shift();
-a.pop();
-console.log(a);
+var array = ['one', 'two', 'three', 'four', 'five', 'six']
+var b = array.slice(2, 5);
+console.log(array);
+console.log(b);
+var c = array.slice(0, 2) .concat (array.slice (3, 6));
+console.log(c)
