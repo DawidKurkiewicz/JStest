@@ -1,7 +1,11 @@
-var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var i = 0;
+var n = 0;
+while (i < 5) {
+i++;
+if (i == 3) {
+    continue;
+}
 
-var i = numbers.length - 1;
-while (i < 12) {
-  console.log(numbers[i]);
-  i++;
+    n += i;
+    console.log(n)
 }
