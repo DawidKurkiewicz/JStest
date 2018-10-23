@@ -1,13 +1,10 @@
-var i = 0;
-var n = 0;
-while (i < 10) {
-  i++;
-  if (i == 3) {
-    continue;
-  }
-  if (i == 9) {
-    break;
-  }
-  n += i;
-  console.log(n);
+var numbers = [] ;
+for ( var i = 0; i < 10; i++){
+    numbers[i] =(Math.random() * 10);
+}
+for(var i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 5){
+        break
+    }
+console.log(numbers [i]);
 }
