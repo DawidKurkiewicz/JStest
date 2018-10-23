@@ -1,11 +1,13 @@
-var a = 3
-
+var a = 'ala'
 if(a == 1) {
     console.log (1)
-} else if ( a == 3){
-    console.log (2)
-} else if (a == 2 ){
-    console.log (a)
- } else {
-    console.log(0) 
+} else if ( typeof a == 'string') {
+    console.log ('to jest string' );
+    if (a === 'ala' ){
+    console.log ('hello ala')
+    }
+} else if (a == null) {
+    console.log('mamy null')
+} else {
+    console.log('oh no!')
 }
