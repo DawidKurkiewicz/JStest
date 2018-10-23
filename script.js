@@ -1,4 +1,4 @@
-var x = 10;
+var x = 'ala';
 
 /*if (x === 1) {
   console.log(1);
@@ -15,14 +15,14 @@ switch (x) {
     case 1:
         console.log(1);
         break;
-    case'1':
-        console.log(2);
+    case 'ala':
+        console.log('hello ala')
         break;
-    case 3:
-        console.log(x);
+    case null:
+        console.log('mamy null');
         break;
     default:
-        console.log(0);
+        console.log('oh no!');
         break;
 
 }
