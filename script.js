@@ -1,5 +1,11 @@
 var a = 3
-var b = 2
 
-console.log( a && b);
-console.log(a || b);
+if(a == 1) {
+    console.log (1)
+} else if ( a == 3){
+    console.log (2)
+} else if (a == 2 ){
+    console.log (a)
+ } else {
+    console.log(0) 
+}
