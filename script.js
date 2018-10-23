@@ -1,14 +1,3 @@
-var monday = true;
-var even = false;
-var a;
-if (monday) {
-    if(even){
-        a = 2;
-    } else {
-    a = 1;
-}
-} else {
-    a = 0;
-}
-
-var b = monday ? (even ? 2 : 1)  : 0;
+var x = 1;
+var y = (x === 1 ? 1 : (x === '1' ? 2 : (x === 3 ? 3 : 0 )));
+console.log(y);
