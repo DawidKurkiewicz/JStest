@@ -1,13 +1,28 @@
-var a = 'ala'
-if(a == 1) {
-    console.log (1)
-} else if ( typeof a == 'string') {
-    console.log ('to jest string' );
-    if (a === 'ala' ){
-    console.log ('hello ala')
-    }
-} else if (a == null) {
-    console.log('mamy null')
+var x = 10;
+
+/*if (x === 1) {
+  console.log(1);
+} else if (x === '1') {
+  console.log(2);
+} else if (x === 3) {
+  console.log(x);
 } else {
-    console.log('oh no!')
+  console.log(0);
+}*/
+
+
+switch (x) {
+    case 1:
+        console.log(1);
+        break;
+    case'1':
+        console.log(2);
+        break;
+    case 3:
+        console.log(x);
+        break;
+    default:
+        console.log(0);
+        break;
+
 }
