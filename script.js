@@ -1,28 +1,14 @@
-var x = 'ala';
-
-/*if (x === 1) {
-  console.log(1);
-} else if (x === '1') {
-  console.log(2);
-} else if (x === 3) {
-  console.log(x);
-} else {
-  console.log(0);
-}*/
-
-
-switch (x) {
-    case 1:
-        console.log(1);
-        break;
-    case 'ala':
-        console.log('hello ala')
-        break;
-    case null:
-        console.log('mamy null');
-        break;
-    default:
-        console.log('oh no!');
-        break;
-
+var monday = true;
+var even = false;
+var a;
+if (monday) {
+    if(even){
+        a = 2;
+    } else {
+    a = 1;
 }
+} else {
+    a = 0;
+}
+
+var b = monday ? (even ? 2 : 1)  : 0;
