@@ -1,7 +1,10 @@
-var mojaSuma = (function (a, b) {
-  var sum = a + b;
-  return sum;
-}) (10, 2)
+function add(a, b) {
 
-console.log(mojaSuma)
+ function square(x) {
+    return x * x
 
+  }
+return square(a) + square(b)
+
+}
+ console.log(add(2, 3))
