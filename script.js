@@ -1,15 +1,18 @@
-var myCar = {
-  make: 'ford',
-  model: 'mustang',
-  sound: function() {
-    console.log('wrrrrr!');
-  },
-  go: function() {
-    console.log('go go go');
-    return 'jestem w funckji go';
+function sumN () {
+  console.log(arguments);
+  var sum =0;
+  for ( var i = 0; i < arguments.length; i++) {
+    sum += arguments[i]
   }
+  return sum;
 }
-myCar.sound();
-myCar.go();
-console.log(myCar.go());
 
+function sum (a, b, c) {
+  return a + c;
+}
+
+
+
+
+console.log (sumN (1, 2, 3, 5));
+console.log(sum(1, 2, 3, 4, 5, 6));
