@@ -1,9 +1,7 @@
-'use strict';
-
-
-function add (a, b) {
-  sum = a + b;
+var mojaSuma = (function (a, b) {
+  var sum = a + b;
   return sum;
-}
+}) (10, 2)
 
-console.log(add(1, 2), sum);
+console.log(mojaSuma)
+
