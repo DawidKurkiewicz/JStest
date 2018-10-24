@@ -1,18 +1,16 @@
-function sumN () {
-  console.log(arguments);
-  var sum =0;
-  for ( var i = 0; i < arguments.length; i++) {
-    sum += arguments[i]
-  }
-  return sum;
-}
-
-function sum (a, b, c) {
-  return a + c;
+function sum (a, b) {
+  return a + b;
 }
 
 
+var go = function(a, b) {
+  return a + b;
 
+}
+var superSum = sum;
+var superSum2 = sum(5, 6);
 
-console.log (sumN (1, 2, 3, 5));
-console.log(sum(1, 2, 3, 4, 5, 6));
+console.log(sum (1, 2));
+console.log(go(3, 4));
+console.log(superSum(3, 3));
+console.log(superSum2)
