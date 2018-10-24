@@ -1,10 +1,9 @@
-function fibo(n) {
-
-  if (n <= 1) {
-    return 1;
-  }
-
-  return fibo(n - 1) + fibo(n - 2);
+function loop (x) {
+  console.log(x);
+  if (x >= 17) {
+    return;
+  
 }
-  console.log(fibo(3));
-  console.log(fibo(6));
+loop(x+1);
+}
+console.log(loop(6))
