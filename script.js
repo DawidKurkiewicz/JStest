@@ -1,7 +1,10 @@
+function fibo(n) {
 
+  if (n <= 1) {
+    return 1;
+  }
 
- const add = (a,b ) => {
-   const square = (x) => x * x;
-   return square(a) + square(b);
- }
- console.log(add(2, 3))
+  return fibo(n - 1) + fibo(n - 2);
+}
+  console.log(fibo(3));
+  console.log(fibo(6));
