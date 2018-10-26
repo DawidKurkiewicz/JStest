@@ -1,24 +1,21 @@
-var index =   sessionStorage.getItem('index') || 0 ;
+// document.querySelector('h1').style.color ='red' ;
+// document.querySelector('h1').style.fontSize ='80px' ;
 
 
 
-function addPerson (name) {
-  localStorage.setItem('person' + index, name);
-  index++;
-  sessionStorage.setItem('index', index);
 
-
+const akapity = document.querySelectorAll('p');
+let i;
+for (i = 0; i  < akapity.length; i++) {
+    akapity[i].style.backgroundColor = 'yellow';
+    akapity[i].style.color = 'blue';
+    akapity[i].style.fontSize = '40px';
 }
 
-function removePerson (key) {
-  localStorage.removeItem(key)
+
+const list = document.querySelectorAll('h1');
+let index;
+for (index = 0; index < list.length; ++index) {
+    list[index].style.fontSize = "60px";
+    list[index].style.color = 'red'
 }
-
-
-addPerson ('marek');
-addPerson ('da');
-addPerson ('wa');
-addPerson ('fa');
-addPerson ('xa');
-addPerson ('ds');
-
