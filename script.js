@@ -20,6 +20,8 @@ for (i = 0; i  < akapity.length; i++) {
     akapity[i].style.color = 'blue';
     akapity[i].style.fontSize = '40px';
     akapity[i].addEventListener('click', color);
+    akapity[i].addEventListener('dblclick', color1);
+
    
 
 
@@ -29,12 +31,12 @@ function color() {
   this.style.fontSize = '80px'
   this.style.color = 'black'
 
+
 }
 function color1() {
-  this.style.backgroundColor = 'purple'
-  this.style.fontSize = '80px'
-  this.style.color = 'pink'
-  this.style.textAlign = 'center'
+  this.style.backgroundColor = 'yellow'
+  this.style.fontSize = '40px'
+  this.style.color = 'blue'
 
 }
 // function pozycjaKursora(e) {
