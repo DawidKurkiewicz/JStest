@@ -1,29 +1,34 @@
-// const kontynenty = ['europa', 'azja', 'antarktyda', 'afryka', 'australia', 'amerykapol', 'amerykapld'];
 
-// kontynenty.sort();
-// kontynenty.reverse();
-
-// console.log(kontynenty)
+// const render = (what, where, myArray) = >{
+    
+// }
 
 
 
 
-var liczby = [1, 12, 13, 0, 2, 20, 9, 3, 22, 10, -2, 11];
-function sortNumber(a,b) {
-    return a - b;
+const owoce = ['Kiwi', 'Mango', 'Ananas', 'Grapefruit'];
+let napis = '<ol>';
+owoce.forEach((element, index, array) => {
+    napis += `<li>${element} (${index})</li>` 
 }
-liczby.sort(sortNumber);
-console.log(liczby)
-liczby.reverse(sortNumber)
-console.log(liczby)
+);
+napis += '</ol>';
+napis +=  '<strong>' +  typeof napis +  '</strong>'
+document.body.innerHTML = napis
 
 
-function render (myArray) {
-    console.log(myArray.sort(function (x, y) {
-        return x - y }));
-    console.log(myArray.reverse(function (x, y) {
-        return x - y }));
 
-};
-var liczby = [1, 12, 13, 0, 2, 20, 9, 3, 22, 10, -2, 11];
-render(liczby)
+
+
+
+// let owoce, tekst, owoceDlug, i;
+// owoce = ['Kiwi', 'Mango', 'Ananas', 'Grapefruit'];
+// owoceDlug = owoce.length;
+// tekst = '<ul>';
+// for (i = 0; i <owoceDlug; i++) {
+//     tekst += '<li>' + owoce[i] + '</li>';
+// }
+// tekst += '</ul>';
+
+
+// document.body.innerHTML = tekst;
