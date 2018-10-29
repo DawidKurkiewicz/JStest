@@ -1,29 +1,36 @@
 
-const render = (what, where, myArray) =>{
-what = '<ol>'
-myArray.forEach((element, index, array) => {
-what += `<li>${element} (${index})</li>`;
-});
-what += '</ol>'
-what +=  '<strong>' +  typeof napis +  '</strong>'
-where.innerHTML = what;
+// const render = (what, where, myArray) =>{
+// what = '<ol>'
+// myArray.forEach((element, index, array) => {
+// what += `<li> ${element} (${index})</li>`;
+// });
+// what += '</ol>'
+// what +=  '<strong>' +  typeof typ +  '</strong>'
+// where.innerHTML = what;
+// };
 
-};
+// let typ = ''
+// const body = document.body
+// const owoce = ['Kiwi', 'Mango', 'Ananas', 'Grapefruit'];
+// render(typ, body, owoce);
 
+// const noweOwoce = owoce.map((element, index, array) =>
+// `<strong>` + element + `</strong>` + ' obszar uprawy Tereny tropikalne ' );
+// document.body.innerHTML = noweOwoce
+// document.write(noweOwoce instanceof Array);
 
+// const owoceNew = owoce.map( (element, index, array) => element + ' --obszar uprawy: tereny tropikalne ');
+//  if (Array.isArray(owoceNew)){typ += '<br>To jest zmienna tablicowa';}
+// document.body.innerHTML = owoceNew + typ;
 
-let napis = ''
-const body = document.body
-const owoce = ['Kiwi', 'Mango', 'Ananas', 'Grapefruit'];
-render(napis, body, owoce);
 
 // const owoce = ['Kiwi', 'Mango', 'Ananas', 'Grapefruit'];
-// let napis = '<ol>';
+// let typ = '<ol>';
 // owoce.forEach((element, index, array) => {
-//     napis += `<li>${element} (${index})</li>` 
+//     typ += `<li>${element} (${index})</li>` 
 // }
 // );
-// napis += '</ol>';
-// napis +=  '<strong>' +  typeof napis +  '</strong>'
-// document.body.innerHTML = napis
+// typ += '</ol>';
+// typ +=  '<strong>' +  typeof typ +  '</strong>'
+// document.body.innerHTML = typ
 
