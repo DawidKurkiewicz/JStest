@@ -15,30 +15,16 @@
 // // render(typ, body, owoce);
 
 
-// const newArray = [];
-
-// const html = owoce.filter((element, index, array) => {
-//     if (element.length >= 6 && element.length < 10) {
-//         newArray.push(element);
-//     }
-// });
-// document.body.innerHTML = `${newArray}
-// liczba elementów spełniających kryteria:
-// ${newArray.length} czy jest tablicą? <strong>${Array.isArray(newArray)}</strong>
-// `;
-
-const owoce = ['Kiwi', 'Mango', 'Ananas', 'Grapefruit'];
-const nrOwoce = owoce.reduce((reduced, element, index, array)=>
-reduced + element);
-document.body.innerHTML = '<strong>' + nrOwoce + '</strong>' +  Array.isArray(nrOwoce) 
-
-// function render (where, myArray) {
-//     var myFilteredArray = myArray.filter(function(element, index, array){
-//         return element.length >=6 && element.length < 10;
-//     });
-//     where.innerHTML = myFilteredArray
+// const owoce = ['Kiwi', 'Mango', 'Ananas', 'Grapefruit'];
+// let typ = '<ol>';
+// owoce.forEach((element, index, array) => {
+//     typ += `<li>${element} (${index})</li>` 
 // }
-// render(document.body, owoce)
+// );
+// typ += '</ol>';
+// typ +=  '<strong>' +  typeof typ +  '</strong>'
+// document.body.innerHTML = typ
+
 
 
 
@@ -53,13 +39,39 @@ document.body.innerHTML = '<strong>' + nrOwoce + '</strong>' +  Array.isArray(nr
 // document.body.innerHTML = noweOwoce
 // document.write(noweOwoce instanceof Array);
 
-// const owoce = ['Kiwi', 'Mango', 'Ananas', 'Grapefruit'];
-// let typ = '<ol>';
-// owoce.forEach((element, index, array) => {
-//     typ += `<li>${element} (${index})</li>` 
+
+
+// const newArray = [];
+// const html = owoce.filter((element, index, array) => {
+//     if (element.length >= 6 && element.length < 10) {
+//         newArray.push(element);
+//     }
+// });
+// document.body.innerHTML = `${newArray}
+// liczba elementów spełniających kryteria:
+// ${newArray.length} czy jest tablicą? <strong>${Array.isArray(newArray)}</strong>
+// `;
+
+// function render (where, myArray) {
+//     var myFilteredArray = myArray.filter(function(element, index, array){
+//         return element.length >=6 && element.length < 10;
+//     });
+//     where.innerHTML = myFilteredArray
 // }
-// );
-// typ += '</ol>';
-// typ +=  '<strong>' +  typeof typ +  '</strong>'
-// document.body.innerHTML = typ
+// render(document.body, owoce)
+
+
+
+// const owoce = ['Kiwi', 'Mango', 'Ananas', 'Grapefruit'];
+// const nrOwoce = owoce.reduce((reduced, element, index, array)=>
+// reduced + element);
+// document.body.innerHTML = '<strong>' + nrOwoce + '</strong>' +  Array.isArray(nrOwoce) 
+
+
+const owoce = ['Kiwi', 'Mango', 'Ananas', 'Grapefruit'];
+const nrOwoce = owoce.find((element, index, array)=>
+element.indexOf('a') === 1);
+document.body.innerHTML = '<strong>' + nrOwoce + '</strong>' +  ' ' + typeof nrOwoce
+
+
 
