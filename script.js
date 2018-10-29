@@ -1,34 +1,29 @@
 
-// const render = (what, where, myArray) = >{
-    
-// }
+const render = (what, where, myArray) =>{
+what = '<ol>'
+myArray.forEach((element, index, array) => {
+what += `<li>${element} (${index})</li>`;
+});
+what += '</ol>'
+what +=  '<strong>' +  typeof napis +  '</strong>'
+where.innerHTML = what;
+
+};
 
 
 
-
+let napis = ''
+const body = document.body
 const owoce = ['Kiwi', 'Mango', 'Ananas', 'Grapefruit'];
-let napis = '<ol>';
-owoce.forEach((element, index, array) => {
-    napis += `<li>${element} (${index})</li>` 
-}
-);
-napis += '</ol>';
-napis +=  '<strong>' +  typeof napis +  '</strong>'
-document.body.innerHTML = napis
+render(napis, body, owoce);
 
-
-
-
-
-
-// let owoce, tekst, owoceDlug, i;
-// owoce = ['Kiwi', 'Mango', 'Ananas', 'Grapefruit'];
-// owoceDlug = owoce.length;
-// tekst = '<ul>';
-// for (i = 0; i <owoceDlug; i++) {
-//     tekst += '<li>' + owoce[i] + '</li>';
+// const owoce = ['Kiwi', 'Mango', 'Ananas', 'Grapefruit'];
+// let napis = '<ol>';
+// owoce.forEach((element, index, array) => {
+//     napis += `<li>${element} (${index})</li>` 
 // }
-// tekst += '</ul>';
+// );
+// napis += '</ol>';
+// napis +=  '<strong>' +  typeof napis +  '</strong>'
+// document.body.innerHTML = napis
 
-
-// document.body.innerHTML = tekst;
