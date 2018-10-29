@@ -11,7 +11,7 @@
 
 // let typ = ''
 // const body = document.body
-const owoce = ['Kiwi', 'Mango', 'Ananas', 'Grapefruit'];
+// const owoce = ['Kiwi', 'Mango', 'Ananas', 'Grapefruit'];
 // // render(typ, body, owoce);
 
 
@@ -27,15 +27,21 @@ const owoce = ['Kiwi', 'Mango', 'Ananas', 'Grapefruit'];
 // ${newArray.length} czy jest tablicą? <strong>${Array.isArray(newArray)}</strong>
 // `;
 
+const owoce = ['Kiwi', 'Mango', 'Ananas', 'Grapefruit'];
+const nrOwoce = owoce.reduce((reduced, element, index, array)=>
+reduced + element);
+document.body.innerHTML = '<strong>' + nrOwoce + '</strong>' +  Array.isArray(nrOwoce) 
+
+// function render (where, myArray) {
+//     var myFilteredArray = myArray.filter(function(element, index, array){
+//         return element.length >=6 && element.length < 10;
+//     });
+//     where.innerHTML = myFilteredArray
+// }
+// render(document.body, owoce)
 
 
-function render (where, myArray) {
-    var myFilteredArray = myArray.filter(function(element, index, array){
-        return element.length >=6 && element.length < 10;
-    });
-    where.innerHTML = myFilteredArray
-}
-render(document.body, owoce)
+
 
 // const owoceNew = owoce.map( (element, index, array) => element + ' --obszar uprawy: tereny tropikalne ');
 //  if (Array.isArray(owoceNew)){typ += '<br>To jest zmienna tablicowa';}
