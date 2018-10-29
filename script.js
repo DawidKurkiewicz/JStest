@@ -9,23 +9,34 @@
 // where.innerHTML = what;
 // };
 
-let typ = ''
-const body = document.body
+// let typ = ''
+// const body = document.body
 const owoce = ['Kiwi', 'Mango', 'Ananas', 'Grapefruit'];
-// render(typ, body, owoce);
+// // render(typ, body, owoce);
 
 
-const newArray = [];
+// const newArray = [];
 
-const html = owoce.filter((element, index, array) => {
-    if (element.length >= 6 && element.length < 10) {
-        newArray.push(element);
-    }
-});
-document.body.innerHTML = `${newArray}
-liczba elementów spełniających kryteria:
-${newArray.length} czy jest tablicą? <strong>${Array.isArray(newArray)}</strong>
-`;
+// const html = owoce.filter((element, index, array) => {
+//     if (element.length >= 6 && element.length < 10) {
+//         newArray.push(element);
+//     }
+// });
+// document.body.innerHTML = `${newArray}
+// liczba elementów spełniających kryteria:
+// ${newArray.length} czy jest tablicą? <strong>${Array.isArray(newArray)}</strong>
+// `;
+
+
+
+function render (where, myArray) {
+    var myFilteredArray = myArray.filter(function(element, index, array){
+        return element.length >=6 && element.length < 10;
+    });
+    where.innerHTML = myFilteredArray
+}
+render(document.body, owoce)
+
 // const owoceNew = owoce.map( (element, index, array) => element + ' --obszar uprawy: tereny tropikalne ');
 //  if (Array.isArray(owoceNew)){typ += '<br>To jest zmienna tablicowa';}
 // document.body.innerHTML = owoceNew + typ;
