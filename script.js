@@ -1,11 +1,26 @@
+const kontynenty = ['europa', 'azja', 'antarktyda', 'afryka', 'australia', 'amerykapol', 'amerykapld'];
 
-document.querySelector('button').addEventListener('click', function() {
-function render(what, where) {
-    where.innerHTML = what;
+kontynenty.sort();
+kontynenty.reverse();
+
+console.log(kontynenty)
+
+
+
+
+const liczby = [1, 12, 13, 0, 2, 20, 9, 3, 22, 10, -2, 11];
+
+function sortNumber(a,b) {
+    return a - b;
 }
-var pole = document.getElementsByName('imie')[0];
-var komunikat = document.getElementById('info');
 
-    render( (pole.defaultValue === pole.value) ? (komunikat.innerHTML = 'Wartość domyślna oraz wartość bieżąca są takie same: ' + pole.defaultValue + ' oraz ' + pole.value + '') : (komunikat.innerHTML = 'Domyślna wartość to: ' + pole.defaultValue + ', zaś wartość bieżąca to: ' + pole.value + ''), komunikat );
 
-});
+liczby.sort(sortNumber);
+console.log(liczby)
+
+
+liczby.reverse(sortNumber)
+console.log(liczby)
+
+
+
