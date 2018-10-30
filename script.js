@@ -1,77 +1,50 @@
-
-// const render = (what, where, myArray) =>{
-// what = '<ol>'
-// myArray.forEach((element, index, array) => {
-// what += `<li> ${element} (${index})</li>`;
-// });
-// what += '</ol>'
-// what +=  '<strong>' +  typeof typ +  '</strong>'
-// where.innerHTML = what;
-// };
-
-// let typ = ''
-// const body = document.body
-// const owoce = ['Kiwi', 'Mango', 'Ananas', 'Grapefruit'];
-// // render(typ, body, owoce);
-
-
-// const owoce = ['Kiwi', 'Mango', 'Ananas', 'Grapefruit'];
-// let typ = '<ol>';
-// owoce.forEach((element, index, array) => {
-//     typ += `<li>${element} (${index})</li>` 
-// }
-// );
-// typ += '</ol>';
-// typ +=  '<strong>' +  typeof typ +  '</strong>'
-// document.body.innerHTML = typ
-
-
-
-
-
-// const owoceNew = owoce.map( (element, index, array) => element + ' --obszar uprawy: tereny tropikalne ');
-//  if (Array.isArray(owoceNew)){typ += '<br>To jest zmienna tablicowa';}
-// document.body.innerHTML = owoceNew + typ;
-
-
-// const noweOwoce = owoce.map((element, index, array) =>
-// `<strong>` + element + `</strong>` + ' obszar uprawy Tereny tropikalne ' );
-// document.body.innerHTML = noweOwoce
-// document.write(noweOwoce instanceof Array);
-
-
-
-// const newArray = [];
-// const html = owoce.filter((element, index, array) => {
-//     if (element.length >= 6 && element.length < 10) {
-//         newArray.push(element);
+// const osoby = [
+//     {
+//         imie: 'Jan',
+//         nazwisko: 'Kowalski',
+//         wiek: 18,
+//         imieNazwisko: function() { return this.imie + ' ' + this.nazwisko; }
+//     },
+//     {
+//         imie: 'Maria',
+//         nazwisko: 'Nowak',
+//         wiek: 21,
+//         imieNazwisko: function() { return this.imie + ' ' + this.nazwisko; }
 //     }
-// });
-// document.body.innerHTML = `${newArray}
-// liczba elementów spełniających kryteria:
-// ${newArray.length} czy jest tablicą? <strong>${Array.isArray(newArray)}</strong>
-// `;
+// ];
 
-// function render (where, myArray) {
-//     var myFilteredArray = myArray.filter(function(element, index, array){
-//         return element.length >=6 && element.length < 10;
-//     });
-//     where.innerHTML = myFilteredArray
+// let tabela = '<table><tr><th>Imie i naziwsko</th><th>wiek</th></tr>';
+// for(cecha in osoby) {
+//     tabela += `<tr>`
+//     tabela +=  `<td>${osoby[cecha].imieNazwisko()}</td>`
+//     tabela += `<td>${osoby[cecha].wiek} lat</td>`
+//     tabela += `</tr>`
 // }
-// render(document.body, owoce)
+// tabela += '</table>';
+// document.body.innerHTML = tabela
 
 
 
-// const owoce = ['Kiwi', 'Mango', 'Ananas', 'Grapefruit'];
-// const nrOwoce = owoce.reduce((reduced, element, index, array)=>
-// reduced + element);
-// document.body.innerHTML = '<strong>' + nrOwoce + '</strong>' +  Array.isArray(nrOwoce) 
 
+const osoby = [
+    {
+        imie: 'Jan',
+        nazwisko: 'Kowalski',
+        wiek: 18,
+    },
+    {
+        imie: 'Maria',
+        nazwisko: 'Nowak',
+        wiek: 21,
+    }
+];
 
-const owoce = ['Kiwi', 'Mango', 'Ananas', 'Grapefruit'];
-const nrOwoce = owoce.find((element, index, array)=>
-element.indexOf('a') === 1);
-document.body.innerHTML = '<strong>' + nrOwoce + '</strong>' +  ' ' + typeof nrOwoce
-
-
-
+let tabela = '<table><tr><th>Imie i naziwsko</th><th>wiek</th></tr>';
+for(cecha in osoby) {
+    tabela += `<tr>`
+    tabela +=  `<td>${osoby[cecha].imie} ${osoby[cecha].nazwisko}</td>`
+    tabela += `<td>${osoby[cecha].wiek} lat</td>`
+    tabela += `</tr>`
+}
+tabela += '</table>';
+document.body.innerHTML = tabela
