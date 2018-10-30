@@ -1,3 +1,7 @@
+document.querySelector('main').style.display = 'none'
+const render = () =>  {
+
+
 let inputNumber;
 let ceofficient;
 let myArray = [];
@@ -55,3 +59,6 @@ document.querySelector('.button-coefficient--calculate').addEventListener('click
 document.querySelector('.button-coefficient--reset').addEventListener('click', () => {
     location.reload(true);
 });
+document.querySelector('main').style.display = 'block'
+}
+render();
